@@ -1,0 +1,61 @@
+<ion-header>
+    <ion-toolbar color="warning">
+        <ion-title>
+            Court Counter
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col>
+                Team A <br><br><br>
+                <ion-textarea>{{score1}}</ion-textarea>
+            </ion-col>
+
+            <div class="vl"> </div>
+
+            <ion-col>
+                Team B<br><br><br>
+                <ion-textarea>{{score2}}</ion-textarea>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>
+                <ion-button color="warning" (click)="plusThree()">+3</ion-button>
+                <ion-button color="warning" (click)="minusThree()">-3</ion-button>
+                <br>
+                <ion-button color="warning" (click)="plusTwoo()">+2</ion-button>
+                <ion-button color="warning" (click)="minusTwo()">-2</ion-button>
+                <br>
+                <ion-button color="warning" (click)="plusOne()">+1</ion-button>
+                <ion-button color="warning" (click)="minusOne()">-1</ion-button>
+                <br>
+            </ion-col>
+            <div class="v2"> </div>
+
+            <ion-col>
+                <ion-button color="warning" (click)="plusThreeB()">+3</ion-button>
+                <ion-button color="warning" (click)="minusThreeB()">-3</ion-button>
+                <br>
+                <ion-button color="warning" (click)="plusTwooB()">+2</ion-button>
+                <ion-button color="warning" (click)="minusTwoB()">-2</ion-button>
+                <br>
+                <ion-button color="warning" (click)="plusOneB()">+1</ion-button>
+                <ion-button color="warning" (click)="minusOneB()">-1</ion-button>
+                <br>
+            </ion-col>
+
+        </ion-row>
+
+        <ion-row class="reset">
+            <ion-col>
+                <br>
+                <ion-button color="warning" (click)="reset()">Reset</ion-button>
+                <br>
+
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
